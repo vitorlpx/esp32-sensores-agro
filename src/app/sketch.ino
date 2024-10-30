@@ -31,6 +31,26 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  delay(10); // this speeds up the simulation
+  detectarInvasao();
+  checarNivelAgua();
+  checarClima();
+  luminosidadeRecebida();
+}
+
+void checarNivelAgua() {
+}
+
+void desativarIrrigacao() {
+}
+
+void ativarIrrigacao() {
+}
+
+void checarClima() {
+}
+
+void detectarInvasao() {
+}
+
+void luminosidadeRecebida() {
 }
