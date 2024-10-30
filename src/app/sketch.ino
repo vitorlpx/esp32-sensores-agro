@@ -9,13 +9,25 @@
 
 #define modeloDHT DHT22
 
+float nivelAgua = 30.0;
+float aguaNecessaria = 40.0;
+
+int umidadeIdeal = 40;  
+int temperaturaIdeal = 30;  
+int limiteDistancia = 26;  
+int luminosidadeIdeal = 30;  
+
 DHT dht(DHTPino, modeloDHT);
 Ultrasonic ultrasonic(TRIGPino, ECHOPino);
 
 void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(115200);
-  Serial.println("Hello, ESP32!");
+  Serial.begin(9600);
+  dht.begin();
+
+  pinMode(DOPino, INPUT);
+  pinMode(PIRDPino, INPUT);
+
+  Serial.println("Sistema de monitoramento iniciado.");
 }
 
 void loop() {
