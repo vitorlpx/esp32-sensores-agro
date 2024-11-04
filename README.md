@@ -22,7 +22,7 @@ O projeto está organizado da seguinte forma:
 - **src/**: Contém o código fonte do projeto.
 - **docs/**: Contém a documentação do projeto, incluindo o README detalhado.
 - **app/**: Contém o código principal do projeto e o seu JSON.
-- **test/**: Contém testes manuais do projeto.
+- **tests/**: Contém testes manuais do projeto.
 
 ## Diagrama do projeto
 ![alt text](diagrama-do-projeto.png)
