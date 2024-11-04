@@ -50,6 +50,3 @@ Este projeto utiliza o ESP32 para monitoramento de sensores agrícolas. O objeti
 
 **Resultado Esperado**: Validar a temperatura e a luminosidade e ativar a irrigação.
 
-## Conclusão
-
-Documente os resultados de cada teste e quaisquer problemas encontrados. Utilize esta documentação para melhorar e corrigir o projeto conforme necessário.
