@@ -20,7 +20,7 @@ Este projeto utiliza o ESP32 para monitoramento de sensores agrícolas. O objeti
 1. Ligar o ESP32.
 2. Confirmar o DHT22 e ajustar a temperatura e umidade para o nível ideal de acordo com as variáveis definidas.
 
-![alt text](image.png)
+![alt text](teste-1.png)
 
 **Resultado Esperado**: Se a temperatura e a umidade estiver ideal, ele chama a função de desativar a irrigação.
 
@@ -33,7 +33,7 @@ Este projeto utiliza o ESP32 para monitoramento de sensores agrícolas. O objeti
 2. Clicar no sensor PIR.
 3. Clicar no botão "Simulate motion".
 
-![alt text](image-1.png)
+![alt text](teste-2.png)
 
 **Resultado Esperado**: O ESP32 deve exibir o alerta para uma invasão detectada.
 
@@ -46,7 +46,7 @@ Este projeto utiliza o ESP32 para monitoramento de sensores agrícolas. O objeti
 2. Alterar a temperatura do DHT22 e alterar luminosidade do LDR.
 3. Verificar se a irrigação foi ativa para ambos.
 
-![alt text](image-2.png)
+![alt text](teste-3.png)
 
 **Resultado Esperado**: Validar a temperatura e a luminosidade e ativar a irrigação.
 
