@@ -21,7 +21,8 @@ Este projeto é um sistema de monitoramento de agro desenvolvido utilizando o mi
 O projeto está organizado da seguinte forma:
 - **src/**: Contém o código fonte do projeto.
 - **docs/**: Contém a documentação do projeto, incluindo o README detalhado.
-- **images/**: Contém imagens e diagramas utilizados na documentação.
+- **app/**: Contém o código principal do projeto e o seu JSON.
+- **test/**: Contém testes manuais do projeto.
 
 ## Diagrama do projeto
 ![alt text](diagrama-do-projeto.png)
