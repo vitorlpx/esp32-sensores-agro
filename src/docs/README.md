@@ -59,3 +59,5 @@ A luminosidade está baixa, a irrigação irá ser ativa...
 
 ## Conclusão
 Este projeto demonstra como utilizar o ESP32 e diversos sensores para monitorar e controlar um sistema de irrigação em uma aplicação de agro. A simulação no Wokwi permite testar e validar o funcionamento do sistema antes de implementá-lo no hardware real.
+
+Para desenvolver todo o projeto, consultamos a documentação do https://wokwi.com/ (exemplo da documentação do HC-SR04: https://docs.wokwi.com/pt-BR/parts/wokwi-hc-sr04/) para a progressão do projeto e a conexão com os pinos no ESP32.
