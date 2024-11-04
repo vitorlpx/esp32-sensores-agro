@@ -57,6 +57,9 @@ Temperatura: [--temperatura--] Umidade: [--umidade--] A umidade ou a temperatura
 - **Luminosidade Recebida**:
 A luminosidade está baixa, a irrigação irá ser ativa...
 
+### Imagem do teste
+![alt text](image-1.png)
+
 ## Conclusão
 Este projeto demonstra como utilizar o ESP32 e diversos sensores para monitorar e controlar um sistema de irrigação em uma aplicação de agro. A simulação no Wokwi permite testar e validar o funcionamento do sistema antes de implementá-lo no hardware real.
 
