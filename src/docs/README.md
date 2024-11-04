@@ -11,7 +11,7 @@ O circuito é composto pelos seguintes sensores:
 - **PIR**: Sensor de movimento
 
 ### Diagrama de Conexões
-[alt text](image.png)
+![alt text](image.png)
 
 ## Descrição dos Sensores
 - **DHT22**: Mede a temperatura e a umidade do ambiente. Se a umidade estiver abaixo do ideal ou a temperatura estiver acima do ideal, a irrigação é ativada.
