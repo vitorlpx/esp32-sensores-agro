@@ -24,7 +24,7 @@ O projeto está organizado da seguinte forma:
 - **images/**: Contém imagens e diagramas utilizados na documentação.
 
 ## Diagrama do projeto
-![alt text](image.png)
+![alt text](diagrama-do-projeto.png)
 
 ## Como Executar o Projeto
 ### No Wokwi
