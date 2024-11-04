@@ -1,44 +1,51 @@
-#include <DHT.h>
-#include <Ultrasonic.h>
+#include <DHT.h> // Biblioteca para o sensor DHT
+#include <Ultrasonic.h> // Biblioteca para o sensor ultrassônico
 
+// Definição dos pinos utilizados
 #define ECHOPino 18
 #define TRIGPino 5
 #define DHTPino 13
 #define DOPino 12
 #define PIRDPino 17
 
+// Definição do modelo do sensor DHT
 #define modeloDHT DHT22
 
+// Variáveis para o nível de água
 float nivelAgua = 30.0;
 float aguaNecessaria = 40.0;
 
+// Valores ideais para umidade, temperatura, distância e luminosidade
 int umidadeIdeal = 40;  
 int temperaturaIdeal = 30;  
 int limiteDistancia = 26;  
 int luminosidadeIdeal = 30;  
 
+// Inicialização dos sensores
 DHT dht(DHTPino, modeloDHT);
 Ultrasonic ultrasonic(TRIGPino, ECHOPino);
 
 void setup() {
-  Serial.begin(9600);
-  dht.begin();
+  Serial.begin(9600); // Inicializa a comunicação serial
+  dht.begin(); // Inicializa o sensor DHT
 
+  // Configura os pinos como entrada
   pinMode(DOPino, INPUT);
   pinMode(PIRDPino, INPUT);
 
-  Serial.println("Sistema de monitoramento iniciado.");
+  Serial.println("Sistema de monitoramento iniciado."); // Mensagem de inicialização
 }
 
 void loop() {
-  detectarInvasao();
-  checarNivelAgua();
-  checarClima();
-  luminosidadeRecebida();
+  detectarInvasao(); // Função para detectar invasão
+  checarNivelAgua(); // Função para checar o nível de água
+  checarClima(); // Função para checar o clima
+  luminosidadeRecebida(); // Função para checar a luminosidade
 
-  delay(10000);
+  delay(10000); // Aguarda 10 segundos antes de repetir o loop
 }
 
+// Função para checar o nível de água
 void checarNivelAgua() {
   int distancia = ultrasonic.read();
   Serial.print("A distância de líquidos nos reservatórios de água: ");
@@ -51,14 +58,17 @@ void checarNivelAgua() {
   }
 }
 
+// Função para desativar a irrigação
 void desativarIrrigacao() {
   Serial.println("Desativando a irrigação...");
 }
 
+// Função para ativar a irrigação
 void ativarIrrigacao() {
   Serial.println("Ativando a irrigação...");
 }
 
+// Função para checar o clima
 void checarClima() {
   float umidade = dht.readHumidity();
   float temperatura = dht.readTemperature();
@@ -81,6 +91,7 @@ void checarClima() {
   }
 }
 
+// Função para detectar invasão
 void detectarInvasao() {
   boolean presencaDetectada = digitalRead(PIRDPino);
 
@@ -91,6 +102,7 @@ void detectarInvasao() {
   }
 }
 
+// Função para verificar a luminosidade
 void luminosidadeRecebida() {
   int intensidadeLuz = analogRead(DOPino); 
 
